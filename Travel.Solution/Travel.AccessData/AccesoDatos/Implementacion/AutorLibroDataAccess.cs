@@ -7,7 +7,7 @@ using Travel.Generales.General;
 
 namespace Travel.AccessData.AccesoDatos.Implementacion
 {
-    public class AutorLibroLibroDataAccess : IAutorLibroDataAccess
+    public class AutorLibroDataAccess : IAutorLibroDataAccess
     {
         private AccesoBaseDatos AccesoBaseDatos = new AccesoBaseDatos();
 

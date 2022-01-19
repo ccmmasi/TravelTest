@@ -47,7 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="LogicaNegocio\Implementacion\LibroService.cs" />
+    <Compile Include="LogicaNegocio\Implementacion\EditorialService.cs" />
+    <Compile Include="LogicaNegocio\Implementacion\AutorLibroService.cs" />
     <Compile Include="LogicaNegocio\Implementacion\AutorService.cs" />
+    <Compile Include="LogicaNegocio\Interface\ILibroService.cs" />
+    <Compile Include="LogicaNegocio\Interface\IEditorialService.cs" />
+    <Compile Include="LogicaNegocio\Interface\IAutorLibroService.cs" />
     <Compile Include="LogicaNegocio\Interface\IAutorService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

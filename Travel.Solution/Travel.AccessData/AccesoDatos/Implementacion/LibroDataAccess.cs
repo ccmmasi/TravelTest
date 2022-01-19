@@ -43,7 +43,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
             return ds.Tables[0];
         }
 
-        public DataTable Libro_ObtUno(int ISBN)
+        public DataTable Libro_ObtUno(double ISBN)
         {
             DataSet ds = new DataSet();
 
@@ -211,7 +211,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
             return LLibros;
         }
 
-        public LibroDTO LibroDTO_ObtUno(int ISBN)
+        public LibroDTO LibroDTO_ObtUno(double ISBN)
         {
             LibroDTO LibroObj = new LibroDTO();
             DataSet ds = new DataSet();

@@ -2,9 +2,9 @@
 using System.Data;
 using Travel.DTOS.DTO;
 
-namespace Travel.AccessData.AccesoDatos.Implementacion
+namespace Travel.Core.LogicaNegocio.Interface
 {
-    public interface ILibroDataAccess
+    public interface ILibroService
     {
         DataTable Libro_ObtAll();
         DataTable Libro_ObtUno(double ISBN);
