@@ -22,7 +22,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                 {
                     cmd.Connection = cnn;
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.CommandText = "AutorLibros_ObtAll";
+                    cmd.CommandText = "AutoresLibros_ObtAll";
 
                     try
                     {
@@ -54,7 +54,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                 {
                     cmd.Connection = cnn;
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.CommandText = "AutorLibros_ObtUno";
+                    cmd.CommandText = "AutoresLibros_ObtUno";
 
                     cmd.Parameters.Add("@AutoresId", SqlDbType.BigInt);
                     cmd.Parameters["@AutoresId"].Value = Autor_Id;
@@ -90,7 +90,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                 {
                     cmd.Connection = cnn;
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.CommandText = "AutorLibros_Insertar";
+                    cmd.CommandText = "AutoresLibros_Insertar";
 
                     cmd.Parameters.Add("@AutoresId", SqlDbType.BigInt);
                     cmd.Parameters["@AutoresId"].Value = Autor_Id;
@@ -130,7 +130,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                 {
                     cmd.Connection = cnn;
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.CommandText = "AutorLibroes_ObtAll";
+                    cmd.CommandText = "AutoresLibros_ObtAll";
 
                     try
                     {
@@ -177,7 +177,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                 {
                     cmd.Connection = cnn;
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.CommandText = "AutorLibroes_ObtUno";
+                    cmd.CommandText = "AutoresLibros_ObtUno";
 
                     cmd.Parameters.Add("@AutoresId", SqlDbType.BigInt);
                     cmd.Parameters["@AutoresId"].Value = Autor_Id;
