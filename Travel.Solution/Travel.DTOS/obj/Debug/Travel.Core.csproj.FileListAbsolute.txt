@@ -1,0 +1,11 @@
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.Core\bin\Debug\Travel.Core.dll
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.Core\bin\Debug\Travel.Core.pdb
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.Core\bin\Debug\log4net.dll
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.Core\bin\Debug\Travel.Generales.dll
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.Core\bin\Debug\Travel.Generales.pdb
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.Core\bin\Debug\log4net.xml
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.Core\obj\Debug\Travel.Core.csproj.AssemblyReference.cache
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.Core\obj\Debug\Travel.Core.csproj.CoreCompileInputs.cache
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.Core\obj\Debug\Travel.Core.csproj.CopyComplete
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.Core\obj\Debug\Travel.Core.dll
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.Core\obj\Debug\Travel.Core.pdb

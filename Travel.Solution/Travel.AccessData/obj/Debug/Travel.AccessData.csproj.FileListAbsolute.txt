@@ -1,0 +1,14 @@
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\bin\Debug\Travel.AccessData.dll
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\bin\Debug\Travel.AccessData.pdb
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\bin\Debug\Travel.DTOS.dll
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\bin\Debug\Travel.Generales.dll
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\bin\Debug\Travel.DTOS.pdb
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\bin\Debug\Travel.Generales.pdb
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\obj\Debug\Travel.AccessData.csproj.AssemblyReference.cache
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\obj\Debug\Travel.AccessData.csproj.CoreCompileInputs.cache
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\obj\Debug\Travel.AccessData.csproj.CopyComplete
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\obj\Debug\Travel.AccessData.dll
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\obj\Debug\Travel.AccessData.pdb
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\bin\Debug\Travel.AccessData.dll.config
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\bin\Debug\Travel.DTOS.dll.config
+C:\Users\ccmma\source\repos\Travel.Solution\Travel.AccessData\bin\Debug\Travel.Generales.dll.config
