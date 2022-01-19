@@ -1,0 +1,6 @@
+Ubique el archivo ConnectionStrings.config en la ruta
+
+....Git\TravelTest\TravelTest\Travel.Solution\Travel.WebApi\Config\ConnectionStrings.config
+
+modifique la ruta de la cadena de conexión con la ruta de la bd correcta. 
+la bd se encuentra en la raiz de la carpeta

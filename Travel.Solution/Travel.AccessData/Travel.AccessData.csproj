@@ -45,6 +45,9 @@
     <Compile Include="AccesoDatos\Implementacion\AutorLibroDataAccess.cs" />
     <Compile Include="AccesoDatos\Implementacion\EditorialDataAccess.cs" />
     <Compile Include="AccesoDatos\Implementacion\LibroDataAccess.cs" />
+    <Compile Include="AccesoDatos\Interface\IAutorLibroDataAccess.cs" />
+    <Compile Include="AccesoDatos\Interface\IEditorialDataAccess.cs" />
+    <Compile Include="AccesoDatos\Interface\ILibroDataAccess.cs" />
     <Compile Include="AccesoDatos\Interface\IAutorDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

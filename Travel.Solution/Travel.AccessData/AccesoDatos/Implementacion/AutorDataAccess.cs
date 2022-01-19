@@ -54,7 +54,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                 {
                     cmd.Connection = cnn;
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.CommandText = "Autores_ObtAll";
+                    cmd.CommandText = "Autores_ObtUno";
 
                     cmd.Parameters.Add("@ID", SqlDbType.BigInt);
                     cmd.Parameters["@ID"].Value = ID;
@@ -209,7 +209,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                 {
                     cmd.Connection = cnn;
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.CommandText = "Autores_ObtAll";
+                    cmd.CommandText = "Autores_ObtUno";
 
                     cmd.Parameters.Add("@ID", SqlDbType.BigInt);
                     cmd.Parameters["@ID"].Value = ID;
