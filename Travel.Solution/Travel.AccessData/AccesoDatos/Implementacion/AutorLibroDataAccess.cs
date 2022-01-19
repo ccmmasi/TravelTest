@@ -56,11 +56,11 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = "AutorLibros_ObtUno";
 
-                    cmd.Parameters.Add("@Autor_Id", SqlDbType.BigInt);
-                    cmd.Parameters["@Autor_Id"].Value = Autor_Id;
+                    cmd.Parameters.Add("@AutoresId", SqlDbType.BigInt);
+                    cmd.Parameters["@AutoresId"].Value = Autor_Id;
 
-                    cmd.Parameters.Add("@Libro_ISBN", SqlDbType.BigInt);
-                    cmd.Parameters["@Libro_ISBN"].Value = Libro_ISBN;
+                    cmd.Parameters.Add("@LibrosISBN", SqlDbType.BigInt);
+                    cmd.Parameters["@LibrosISBN"].Value = Libro_ISBN;
 
                     try
                     {
@@ -92,45 +92,11 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = "AutorLibros_Insertar";
 
-                    cmd.Parameters.Add("@Autor_Id", SqlDbType.BigInt);
-                    cmd.Parameters["@Autor_Id"].Value = Autor_Id;
+                    cmd.Parameters.Add("@AutoresId", SqlDbType.BigInt);
+                    cmd.Parameters["@AutoresId"].Value = Autor_Id;
 
-                    cmd.Parameters.Add("@Libro_ISBN", SqlDbType.BigInt);
-                    cmd.Parameters["@Libro_ISBN"].Value = Libro_ISBN;
-
-                    try
-                    {
-                        cmd.ExecuteNonQuery();
-                        return 1;
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                    finally
-                    {
-                        cnn.Close();
-                    }
-                }
-            }
-        }
-
-        public int AutorLibro_Actualizar(double Autor_Id, double Libro_ISBN)
-        {
-            using (SqlConnection cnn = new SqlConnection(AccesoBaseDatos.GetCnnString()))
-            {
-                cnn.Open();
-                using (SqlCommand cmd = new SqlCommand())
-                {
-                    cmd.Connection = cnn;
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.CommandText = "AutorLibros_Actualizar";
-
-                    cmd.Parameters.Add("@Autor_Id", SqlDbType.BigInt);
-                    cmd.Parameters["@Autor_Id"].Value = Autor_Id;
-
-                    cmd.Parameters.Add("@Libro_ISBN", SqlDbType.BigInt);
-                    cmd.Parameters["@Libro_ISBN"].Value = Libro_ISBN;
+                    cmd.Parameters.Add("@LibrosISBN", SqlDbType.BigInt);
+                    cmd.Parameters["@LibrosISBN"].Value = Libro_ISBN;
 
                     try
                     {
@@ -151,6 +117,8 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
 
         public List<AutorLibroDTO> AutorLibroDTO_ObtAll()
         {
+            IAutorDataAccess AutorDataAccess = new AutorDataAccess();
+            ILibroDataAccess LibroDataAccess = new LibroDataAccess();
             List<AutorLibroDTO> LAutorLibroes = new List<AutorLibroDTO>();
             AutorLibroDTO AutorLibroObj = new AutorLibroDTO();
             DataSet ds = new DataSet();
@@ -173,8 +141,10 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                         {
                             AutorLibroObj = new AutorLibroDTO();
 
-                            AutorLibroObj.Autor_Id = Item.Field<double>("Autor_Id");
-                            AutorLibroObj.Libro_ISBN = Item.Field<double>("Libro_ISBN");
+                            AutorLibroObj.Autor_Id = Item.Field<double>("AutoresId");
+                            AutorLibroObj.Libro_ISBN = Item.Field<double>("LibrosISBN");
+                            AutorLibroObj.Autor = AutorDataAccess.AutorDTO_ObtUno(Item.Field<double>("AutoresId"));
+                            AutorLibroObj.Libro = LibroDataAccess.LibroDTO_ObtUno(Item.Field<double>("LibrosISBN"));
 
                             LAutorLibroes.Add(AutorLibroObj);
                         }
@@ -195,6 +165,8 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
 
         public AutorLibroDTO AutorLibroDTO_ObtUno(double Autor_Id, double Libro_ISBN)
         {
+            IAutorDataAccess AutorDataAccess = new AutorDataAccess();
+            ILibroDataAccess LibroDataAccess = new LibroDataAccess();
             AutorLibroDTO AutorLibroObj = new AutorLibroDTO();
             DataSet ds = new DataSet();
 
@@ -207,11 +179,11 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = "AutorLibroes_ObtUno";
 
-                    cmd.Parameters.Add("@Autor_Id", SqlDbType.BigInt);
-                    cmd.Parameters["@Autor_Id"].Value = Autor_Id;
+                    cmd.Parameters.Add("@AutoresId", SqlDbType.BigInt);
+                    cmd.Parameters["@AutoresId"].Value = Autor_Id;
 
-                    cmd.Parameters.Add("@Libro_ISBN", SqlDbType.BigInt);
-                    cmd.Parameters["@Libro_ISBN"].Value = Libro_ISBN;
+                    cmd.Parameters.Add("@LibrosISBN", SqlDbType.BigInt);
+                    cmd.Parameters["@LibrosISBN"].Value = Libro_ISBN;
 
                     try
                     {
@@ -222,8 +194,10 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                         {
                             AutorLibroObj = new AutorLibroDTO();
 
-                            AutorLibroObj.Autor_Id = Item.Field<double>("Autor_Id");
-                            AutorLibroObj.Libro_ISBN = Item.Field<double>("Libro_ISBN");
+                            AutorLibroObj.Autor_Id = Item.Field<double>("AutoresId");
+                            AutorLibroObj.Libro_ISBN = Item.Field<double>("LibrosISBN");
+                            AutorLibroObj.Autor = AutorDataAccess.AutorDTO_ObtUno(Item.Field<double>("AutoresId"));
+                            AutorLibroObj.Libro = LibroDataAccess.LibroDTO_ObtUno(Item.Field<double>("LibrosISBN"));
                         }
                     }
                     catch (Exception ex)

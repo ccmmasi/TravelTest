@@ -52,19 +52,6 @@ namespace Travel.Core.LogicaNegocio.Implementacion
             }
         }
 
-        public int AutorLibro_Actualizar(double Autor_Id, double Libro_ISBN)
-        {
-            try
-            {
-                return AutorLibroDataAccess.AutorLibro_Actualizar(Autor_Id, Libro_ISBN);
-            }
-            catch (Exception e)
-            {
-                log.Error($"Error ocurrido al actualizar el registro.", e);
-                throw e;
-            }
-        }
-
         public List<AutorLibroDTO> AutorLibroDTO_ObtAll()
         {
             try

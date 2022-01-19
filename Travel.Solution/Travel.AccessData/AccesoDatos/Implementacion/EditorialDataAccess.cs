@@ -43,7 +43,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
             return ds.Tables[0];
         }
 
-        public DataTable Editorial_ObtUno(int ID)
+        public DataTable Editorial_ObtUno(double ID)
         {
             DataSet ds = new DataSet();
 
@@ -78,7 +78,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
             return ds.Tables[0];
         }
 
-        public int Editorial_Insertar(int ID, string Nombre, string Sede)
+        public int Editorial_Insertar(double ID, string Nombre, string Sede)
         {
             using (SqlConnection cnn = new SqlConnection(AccesoBaseDatos.GetCnnString()))
             {
@@ -115,7 +115,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
             }
         }
 
-        public int Editorial_Actualizar(int ID, string Nombre, string Sede)
+        public int Editorial_Actualizar(double ID, string Nombre, string Sede)
         {
             using (SqlConnection cnn = new SqlConnection(AccesoBaseDatos.GetCnnString()))
             {
@@ -197,7 +197,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
             return LEditoriales;
         }
 
-        public EditorialDTO EditorialDTO_ObtUno(int ID)
+        public EditorialDTO EditorialDTO_ObtUno(double ID)
         {
             EditorialDTO EditorialObj = new EditorialDTO();
             DataSet ds = new DataSet();

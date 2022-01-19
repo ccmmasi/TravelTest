@@ -43,7 +43,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
             return ds.Tables[0];
         }
 
-        public DataTable Autor_ObtUno(int ID)
+        public DataTable Autor_ObtUno(double ID)
         {
             DataSet ds = new DataSet();
 
@@ -78,7 +78,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
             return ds.Tables[0];
         }
 
-        public int Autor_Insertar(int ID, string Nombres, string Apellidos)
+        public int Autor_Insertar(double ID, string Nombres, string Apellidos)
         {
             using (SqlConnection cnn = new SqlConnection(AccesoBaseDatos.GetCnnString()))
             {
@@ -115,7 +115,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
             }
         }
 
-        public int Autor_Actualizar(int ID, string Nombres, string Apellidos)
+        public int Autor_Actualizar(double ID, string Nombres, string Apellidos)
         {
             using (SqlConnection cnn = new SqlConnection(AccesoBaseDatos.GetCnnString()))
             {
@@ -197,7 +197,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
             return LAutores;
         }
 
-        public AutorDTO AutorDTO_ObtUno(int ID)
+        public AutorDTO AutorDTO_ObtUno(double ID)
         {
             AutorDTO AutorObj = new AutorDTO();
             DataSet ds = new DataSet();

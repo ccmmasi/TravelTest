@@ -1,6 +1,21 @@
-Ubique el archivo ConnectionStrings.config en la ruta
 
+--------------------------------------------
+CADENA DE CONEXIÓN
+
+Ubique el archivo ConnectionStrings.config en la ruta: 
 ....Git\TravelTest\TravelTest\Travel.Solution\Travel.WebApi\Config\ConnectionStrings.config
 
 modifique la ruta de la cadena de conexión con la ruta de la bd correcta. 
 la bd se encuentra en la raiz de la carpeta
+
+
+
+
+
+
+-------------------------------------------
+COMPILAR PROCEDIMIENTOS ALMACENADOS
+
+Ubique la carpeta StoredProcedures en la ruta: ....Git\TravelTest\TravelTest\Travel.Solution\BaseDatos\StoredProcedures
+En esta carpeta ubique el archivo CompilarYUnificar.bat
+al ejecutarlo se crea el archivo: ArchivosCompilados.sql. ejecutelo para crear los procedimientos almacenados.

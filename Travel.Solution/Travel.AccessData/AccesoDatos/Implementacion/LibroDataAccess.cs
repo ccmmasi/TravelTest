@@ -166,6 +166,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
 
         public List<LibroDTO> LibroDTO_ObtAll()
         {
+            IEditorialDataAccess EditorialDataAccess = new EditorialDataAccess();
             List<LibroDTO> LLibros = new List<LibroDTO>();
             LibroDTO LibroObj = new LibroDTO();
             DataSet ds = new DataSet();
@@ -188,11 +189,12 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                         {
                             LibroObj = new LibroDTO();
 
-                            LibroObj.ISBN = Item.Field<double>("ID");
-                            LibroObj.Editorial_Id = Item.Field<double>("Editorial_Id");
+                            LibroObj.ISBN = Item.Field<double>("ISBN");
+                            LibroObj.Editorial_Id = Item.Field<double>("EditorialId");
                             LibroObj.Titulo = Item.Field<string>("Titulo");
                             LibroObj.Sinopsis = Item.Field<string>("Sinopsis");
                             LibroObj.NPaginas = Item.Field<string>("NPaginas");
+                            LibroObj.Editorial = EditorialDataAccess.EditorialDTO_ObtUno(Item.Field<double>("EditorialId"));
 
                             LLibros.Add(LibroObj);
                         }
@@ -213,6 +215,7 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
 
         public LibroDTO LibroDTO_ObtUno(double ISBN)
         {
+            IEditorialDataAccess EditorialDataAccess = new EditorialDataAccess();
             LibroDTO LibroObj = new LibroDTO();
             DataSet ds = new DataSet();
 
@@ -237,11 +240,12 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
                         {
                             LibroObj = new LibroDTO();
 
-                            LibroObj.ISBN = Item.Field<double>("ID");
-                            LibroObj.Editorial_Id = Item.Field<double>("Editorial_Id");
+                            LibroObj.ISBN = Item.Field<double>("ISBN");
+                            LibroObj.Editorial_Id = Item.Field<double>("EditorialId");
                             LibroObj.Titulo = Item.Field<string>("Titulo");
                             LibroObj.Sinopsis = Item.Field<string>("Sinopsis");
                             LibroObj.NPaginas = Item.Field<string>("NPaginas");
+                            LibroObj.Editorial = EditorialDataAccess.EditorialDTO_ObtUno(Item.Field<double>("EditorialId"));
                         }
                     }
                     catch (Exception ex)

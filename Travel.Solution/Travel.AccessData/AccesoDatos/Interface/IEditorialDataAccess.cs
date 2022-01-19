@@ -7,10 +7,10 @@ namespace Travel.AccessData.AccesoDatos.Implementacion
     public interface IEditorialDataAccess
     {
         DataTable Editorial_ObtAll();
-        DataTable Editorial_ObtUno(int ID);
-        int Editorial_Insertar(int ID, string Nombre, string Sede);
-        int Editorial_Actualizar(int ID, string Nombre, string Sede);
+        DataTable Editorial_ObtUno(double ID);
+        int Editorial_Insertar(double ID, string Nombre, string Sede);
+        int Editorial_Actualizar(double ID, string Nombre, string Sede);
         List<EditorialDTO> EditorialDTO_ObtAll();
-        EditorialDTO EditorialDTO_ObtUno(int ID);
+        EditorialDTO EditorialDTO_ObtUno(double ID);
     }
 }

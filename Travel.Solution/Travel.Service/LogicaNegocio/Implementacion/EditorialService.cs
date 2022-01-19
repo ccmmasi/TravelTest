@@ -26,7 +26,7 @@ namespace Travel.Core.LogicaNegocio.Implementacion
             }
         }
 
-        public DataTable Editorial_ObtUno(int ID)
+        public DataTable Editorial_ObtUno(double ID)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace Travel.Core.LogicaNegocio.Implementacion
             }
         }
 
-        public int Editorial_Insertar(int ID, string Nombre, string Sede)
+        public int Editorial_Insertar(double ID, string Nombre, string Sede)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace Travel.Core.LogicaNegocio.Implementacion
             }
         }
 
-        public int Editorial_Actualizar(int ID, string Nombre, string Sede)
+        public int Editorial_Actualizar(double ID, string Nombre, string Sede)
         {
             try
             {
@@ -78,7 +78,7 @@ namespace Travel.Core.LogicaNegocio.Implementacion
             }
         }
 
-        public EditorialDTO EditorialDTO_ObtUno(int ID)
+        public EditorialDTO EditorialDTO_ObtUno(double ID)
         {
             try
             {

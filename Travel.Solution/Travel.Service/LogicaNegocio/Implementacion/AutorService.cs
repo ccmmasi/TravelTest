@@ -26,7 +26,7 @@ namespace Travel.Core.LogicaNegocio.Implementacion
             }
         }
 
-        public DataTable Autor_ObtUno(int ID)
+        public DataTable Autor_ObtUno(double ID)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace Travel.Core.LogicaNegocio.Implementacion
             }
         }
 
-        public int Autor_Insertar(int ID, string Nombres, string Apellidos)
+        public int Autor_Insertar(double ID, string Nombres, string Apellidos)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace Travel.Core.LogicaNegocio.Implementacion
             }
         }
 
-        public int Autor_Actualizar(int ID, string Nombres, string Apellidos)
+        public int Autor_Actualizar(double ID, string Nombres, string Apellidos)
         {
             try
             {
@@ -78,7 +78,7 @@ namespace Travel.Core.LogicaNegocio.Implementacion
             }
         }
 
-        public AutorDTO AutorDTO_ObtUno(int ID)
+        public AutorDTO AutorDTO_ObtUno(double ID)
         {
             try
             {
